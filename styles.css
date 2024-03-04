@@ -1,0 +1,54 @@
+body {
+    background-image: url('/media/website\ background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 300px;
+}
+
+nav {
+    position: fixed;
+    align-items: right;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* or any color you prefer */
+    color: pink; /* or any color you prefer */
+    padding: 10px;
+    z-index: 100; /* to ensure the nav bar stays on top of other elements */
+    box-shadow: #ddd;
+}
+
+footer {
+    background-color: transparent;
+    color: purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: #ddd;
+}
+
+article {
+    background-color: purple;
+    background-blend-mode: color;
+    color: #ddd;
+    border: 1px solid pink; /* grey border */
+    padding: 15px; /* space around the content */
+    margin-bottom: 20px; /* space below each article */
+    border-radius: 5px; /* rounded corners */
+    width: 500px;
+    /* subtle shadow */
+}
+article:hover {
+    transform: scale(1.02); /* slightly enlarge the article */
+    transition: transform 0.3s ease-in-out; /* animate the transformation */
+    box-shadow: 0 2px 5px purple;
+}
