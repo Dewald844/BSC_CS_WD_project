@@ -26,11 +26,9 @@ function applyBodyClass () {
    let elems = document.getElementsByClassName('body');
    for(let i = 0; i < elems.length; i++) {
        elems[i].classList.add(
-         "bg-gray-800"
-         , "h-screen"
-         , "background-image"   
+         "bg-[#302e2f]"
+       
       );
-      elems[i].style.backgroundImage = "url('media/background11.jpg')";
    }
 }
 
@@ -47,10 +45,11 @@ function applyButtonClass () {
          "duration-300",
          "shadow-gray-900",
          "m-auto",
-         "bg-indigo-500",
+         "border-2",
+         "border-pink-500",
          "px-2",
          "rounded",
-         "text-slate-900",
+         "text-pink-300",
          "font-semibold"
        )
    }
@@ -68,7 +67,7 @@ function applyFooterClass () {
          "bg-[#302e2f]",
          "grid",
          "grid-cols-3",
-         "sticky",
+         "fixed",
          "text-slate-300",
          "font-semibold"
       );
@@ -104,10 +103,13 @@ function applyCardClass () {
    for(let i = 0; i < elems.length; i++) {
        elems[i].classList.add(
          "p-4",
-         "bg-indigo-500",
+         "bg-[#302e2f]",
+         "border-2",
+         "border-pink-500",
          "m-2",
          "rounded-md",
-         "w-[30%]",
+         "lg:w-[30%]",
+         "w-[50%]",
          "justify-self-center",
          "transition",
          "ease-in-out",
