@@ -1,3 +1,4 @@
+// Purpose: This script is used to send an email to the website owner when the contact form is submitted.
 function sendEmail(event) {
    event.preventDefault(); // Prevent the form from submitting normally
 
@@ -26,5 +27,6 @@ function sendEmail(event) {
       + "\nReason for Contact: " 
       + reason;
 
+   // Open the user's email client and populate the email fields
    window.location.href = "mailto:dewald844@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 }

@@ -4,75 +4,23 @@
     <head>
         <title>Neon fun park</title>
         <script src="scripts/functionality.js"></script>
+        <script src="scripts/renderTailwindCssClasses.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body class="bg-gradient-to-bl from-gray-500 via-indigo-500 to-gray-500">
+    <body class="body">
         <!--Nav bar for Top page navigation-->
-        <nav class="bg-purple-900 sticky z-[100] shadow shadow-lg top-0 w-full grid grid-cols-3">
+        <nav class="navbar">
             <img class="rounded-lg m-2" width="50" height="50" src="/media/background1.jpeg">
-            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/parkInformation.html">Ride Information</a>
-            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/contactPage.html">Contact information</a> 
+            <a class="button" href="/parkInformation.html">Ride Information</a>
+            <a class="button" href="/contactPage.html">Contact information</a> 
         </nav>
-        <!--General information about the park-->
-        <!--Neon water slides basic information-->
-        <div class="grid grid-cols-1 mx-12">
-            <article class="p-4 bg-glass m-2 rounded-md w-[50%] justify-self-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                <section>
-                     <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon water slides !</h1>
-                     <img class="w-full rounded-md" height="100" src="https://amusementlogic.com/wp-content/uploads/2022/06/NEWSLETTER-2022-06-Img01-Francisco-J.-Lozano-1200x675.jpg" alt="Water slide image">
-                     <div class="text-slate-300 font-semibold text-lg m-4 text-center">
-                        <p>Our most popular summer attraction . </p>
-                        <p>Come take a refreshing and trilling ride with our 200m waterslide </p>
-                        <p>This ride is sutable for everyone over the age of 12 years.</p>
-                        <p>Younger children must be accompanied by an adult</p>
-                     </div>
-                  </section>
-            </article>
-            <!--Neon putt putt eye catcher-->
-            <article class="p-4 bg-glass m-2 rounded-md w-[50%] justify-self-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                <section>
-                    <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon putt putt course !</h1>
-                    <img class="w-full rounded-md" height="100" src="https://www.puttingedge.com/wp-content/uploads/2021/12/gallery1.jpeg" alt="Neon putt putt image">
-                    <div class="text-slate-300 font-semibold text-lg m-4 text-center">
-                        <p>Not feeling hot enough today? Come and take on out challanging 18 hole Putt Putt course</p>
-                        <p>This theeth biting course will leave you satisfied and challanged to do better on your next visit</p>
-                        <p>Suitible for all over 5 years of age and daring for even the experience putters</p>
-                    </div>
-                  </section>
-            </article>
-            <!--Neon roller coster basic information-->
-            <article class="p-4 bg-glass m-2 rounded-md w-[50%] justify-self-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                <section>
-                    <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon roller coster !</h1>
-                    <img class="w-full rounded-md" height="100" src="https://wallpapers.com/images/high/roller-coaster-ride-in-neon-lights-fh7xma20zuzobb08.webp" alt="Neon rollar coster">
-                    <div class="text-slate-300 font-semibold text-lg m-4 text-center">
-                        <p>Scared it might be to late and don't want to go home ?</p>
-                        <p>This roller coster lights up at night and can still be stomach turing after the 10th time</p>
-                        <p>Suitable for all taller than 1.4m  </p>
-                    </div>
-                </section>
-            </article>
-        </div>
-        <!-- Foot with contact information and more navigation-->
-        <footer class="bottom-0 w-full p-2 bg-purple-900 grid grid-cols-4 sticky text-slate-300 font-semibold">
-            <table class="border-separate border-spacing-2 ">
-                <th></th>
-                <tbody>
-                    <tr>
-                        <td class="shadow-inner shadow-indigo-500 rounded-full text-center text-nowrap px-2">Contact number</td>
-                        <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all">+27 79 050 00013</td>
-                    </tr>
-                    <tr>
-                        <td class="shadow-inner shadow-indigo-500 rounded-full text-center">Email address</td>
-                        <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all px-2">dewald844@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/parkInformation.html">Ride Information</a>
-            <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/contactPage.html">Contact information</a>
-            <img class="rounded-lg justify-self-end my-auto" width="50" height="50" src="/media/background1.jpeg">
+        
+        <footer class="footer">
+            <img class="rounded-lg justify-self-start my-auto" width="50" height="50" src="/media/background1.jpeg">
+            <a class="button" href="/parkInformation.html">Ride Information</a>
+            <a class="button" href="/contactPage.html">Contact information</a>
          </footer>
     </body>
 </html>

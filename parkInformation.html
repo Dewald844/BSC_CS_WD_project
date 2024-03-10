@@ -5,33 +5,69 @@
         <title>Neon fun park</title>
         <script src="scripts/functionality.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="scripts/renderTailwindCssClasses.js"></script>
     </head>
-    <body class="bg-gradient-to-bl from-gray-500 via-indigo-500 to-gray-500">
-      <nav class="bg-purple-900 sticky z-[100] shadow shadow-lg top-0 w-full grid grid-cols-3">
+    <body class="body">
+      <nav class="navbar" >
          <img class="rounded-lg m-2" width="50" height="50" src="/media/background1.jpeg">
-         <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/index.html">Home</a>
-         <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/contactPage.html">Contact Information</a> 
+         <a class="button" href="/index.html">Home</a>
+         <a class="button" href="/contactPage.html">Contact Information</a> 
      </nav>
+      <div class="grid grid-cols-1 my-12 gap-12">
+         <div class="card">
+             <section>
+                  <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon water slides !</h1>
+                  <img class="w-full rounded-md" height="100" src="media/watreslide.webp" alt="Water slide image">
+                  <div class="text-slate-300 font-semibold text-lg m-4 text-center">
+                     <p>Our most popular summer attraction . </p>
+                     <p>Come take a refreshing and trilling ride with our 200m waterslide </p>
+                     <p>This ride is sutable for everyone over the age of 12 years.</p>
+                     <p>Younger children must be accompanied by an adult</p>
+                  </div>
+            </section>
+         </div>
+         <!--Neon putt putt eye catcher-->
+         <div class="card">
+            <section>
+               <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon putt putt course !</h1>
+               <img class="w-full rounded-md" height="100" src="media/puttputt.jpeg" alt="Neon putt putt image">
+               <div class="text-slate-300 font-semibold text-lg m-4 text-center">
+                   <p>Not feeling hot enough today? Come and take on out challanging 18 hole Putt Putt course</p>
+                   <p>This theeth biting course will leave you satisfied and challanged to do better on your next visit</p>
+                   <p>Suitible for all over 5 years of age and daring for even the experience putters</p>
+               </div>
+            </section>
+         </div>
+         <!--Neon roller coster basic information-->
+         <div class="card">
+            <section>
+               <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Neon roller coster !</h1>
+               <img class="w-full rounded-md" height="100" src="media/rollercoaster.webp" alt="Neon rollar coster">
+               <div class="text-slate-300 font-semibold text-lg m-4 text-center">
+                  <p>Scared it might be to late and don't want to go home ?</p>
+                  <p>This roller coster lights up at night and can still be stomach turing after the 10th time</p>
+                  <p>Suitable for all taller than 1.4m  </p>
+               </div>
+            </section>
+         </div>
 
-     <footer class="bottom-0 w-full p-2 bg-purple-900 grid grid-cols-4 sticky text-slate-300 font-semibold">
-      <table class="border-separate border-spacing-2 ">
-          <th></th>
-          <tbody>
-              <tr>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center text-nowrap px-2">Contact number</td>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all">+27 79 050 00013</td>
-              </tr>
-              <tr>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center">Email address</td>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all px-2">dewald844@gmail.com</td>
-              </tr>
-          </tbody>
-      </table>
-
-      <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/parkInformation.html">Ride Information</a>
-      <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/contactPage.html">Contact information</a>
-      <img class="rounded-lg justify-self-end my-auto" width="50" height="50" src="/media/background1.jpeg">
-   </footer>
+         <div class="card">
+            <section>
+               <h1 class="text-6xl text-slate-300 flex justify-center mb-4">Ten pin bowling !</h1>
+               <img class="w-full rounded-md" height="100" src="media/tenpinbowling.jpg" alt="Neon rollar coster">
+               <div class="text-slate-300 font-semibold text-lg m-4 text-center">
+                  <p>Perfect for the hole family !</p>
+                  <p>UP to 4 player can play at a time</p>
+                  <p>Add your name on the board to take part in our montly tournaments</p>
+               </div>
+            </section>
+         </div>
+     </div>
+      <footer class="footer">
+         <img class="rounded-lg justify-self-start my-auto" width="50" height="50" src="/media/background1.jpeg">
+         <a class="button" href="/parkInformation.html">Ride Information</a>
+         <a class="button" href="/contactPage.html">Contact information</a>
+      </footer>
 
     </body>
 

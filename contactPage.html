@@ -6,52 +6,40 @@
         <script src="scripts/functionality.js"></script>
         <script src="scripts/formSubmit.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="scripts/renderTailwindCssClasses.js"></script>
     </head>
-    <body class="bg-gradient-to-bl from-gray-500 via-indigo-500 to-gray-500 h-screen">
-      <nav class="bg-purple-900 sticky z-[100] shadow shadow-lg top-0 w-full grid grid-cols-3">
+    <body class="body">
+      <nav class="navbar">
          <img class="rounded-lg m-2" width="50" height="50" src="/media/background1.jpeg">
-         <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/index.html">Home page</a> 
-         <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/parkInformation.html">Ride Information</a>
-     </nav>
-     <div class="m-auto container h-max">
-         <h1 class="text-center text-4xl font-bold text-slate-100 pb-14 pt-14">Contact Information</h1>
-         <form class="grid grid-cols-l justify-content-center" onsubmit="sendEmail(event)" method="post">
-            <label class="text-slate-300 font-semibold text-xl p-0" for="name">Name:</label><br>
-            <input class="px-2 py-2 font-semibold text-slate-100 rounded-lg shadow-inner outline-purple-500 shadow-indigo-500" type="text" id="name" name="name"><br>
-            <label class="text-slate-300 font-semibold text-xl p-0" for="surname">Surname:</label><br>
-            <input class="px-2 py-2 font-semibold text-slate-100 rounded-lg shadow-inner outline-purple-500 shadow-indigo-500" type="text" id="surname" name="surname"><br>
-            <label class="text-slate-300 font-semibold text-xl p-0" for="email">Email:</label><br>
-            <input class="px-2 py-2 font-semibold text-slate-100 rounded-lg shadow-inner outline-purple-500 shadow-indigo-500" type="email" id="email" name="email"><br>
-            <label class="text-slate-300 font-semibold text-xl p-0" for="contact_number">Contact Number:</label><br>
-            <input class="px-2 py-2 font-semibold text-slate-100 rounded-lg shadow-inner outline-purple-500 shadow-indigo-500" type="tel" id="contact_number" name="contact_number"><br>
-            <label class="text-slate-300 font-semibold text-xl p-0" for="reason">Reason for Contact:</label><br>
-            <textarea class="px-2 py-2 font-semibold text-slate-100 rounded-lg shadow-inner outline-purple-500 shadow-indigo-500" id="reason" name="reason"></textarea><br>
-            <input class="shadow-inner transition ease-in-out delay-150 hover:shadow hover:-translate-y-1 hover:scale-110 hover:bg-purple-500 duration-300 shadow-gray-900 m-auto bg-purple-500 px-2 rounded text-slate-900 font-semibold " type="submit" value="SUBMIT">
-         </form>
+         <a class="button" href="/index.html">Home page</a> 
+         <a class="button" href="/parkInformation.html">Ride Information</a>
+      </nav>
+      <div class="h-full">
+         <div class="flex mt-12 justify-center">
+             <div class="card">
+                <h1 class="text-center text-4xl font-bold text-slate-100 pb-14 pt-14">Contact Information</h1>
+                <form class="grid grid-cols-l justify-content-center" onsubmit="sendEmail(event)" method="post">
+                   <label class="input-label" for="name">Name:</label><br>
+                   <input class="input" type="text" id="name" name="name"><br>
+                   <label class="input-label" for="surname">Surname:</label><br>
+                   <input class="input" type="text" id="surname" name="surname"><br>
+                   <label class="input-label" for="email">Email:</label><br>
+                   <input class="input" type="email" id="email" name="email"><br>
+                   <label class="input-label" for="contact_number">Contact Number:</label><br>
+                   <input class="input" type="tel" id="contact_number" name="contact_number"><br>
+                   <label class="input-label" for="reason">Reason for Contact:</label><br>
+                   <textarea class="input" id="reason" name="reason"></textarea><br>
+                   <input class="button " type="submit" value="SUBMIT">
+                </form>
+             </div>
+          </div>
       </div>
+     <footer class="footer">
+        <img class="rounded-lg justify-self-start my-auto" width="50" height="50" src="/media/background1.jpeg">
+        <a class="button" href="/parkInformation.html">Ride Information</a>
+        <a class="button" href="/contactPage.html">Contact information</a>
+     </footer>
 
-
-
-     <footer class="bottom-0 w-full p-2 bg-purple-900 grid grid-cols-4 fixed text-slate-300 font-semibold">
-      <table class="border-separate border-spacing-2 ">
-          <th></th>
-          <tbody>
-              <tr>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center text-nowrap px-2">Contact number</td>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all">+27 79 050 00013</td>
-              </tr>
-              <tr>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center">Email address</td>
-                  <td class="shadow-inner shadow-indigo-500 rounded-full text-center select-all px-2">dewald844@gmail.com</td>
-              </tr>
-          </tbody>
-      </table>
-
-      <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/parkInformation.html">Ride Information</a>
-      <a class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 shadow-gray-900 m-auto bg-indigo-500 px-2 rounded text-slate-900 font-semibold" href="/contactPage.html">Contact information</a>
-      <img class="rounded-lg justify-self-end my-auto" width="50" height="50" src="/media/background1.jpeg">
-   </footer>
-
-    </body>
+   </body>
 
 </html>
